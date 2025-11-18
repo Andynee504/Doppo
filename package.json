@@ -1,0 +1,28 @@
+{
+  "name": "doppo",
+  "version": "0.0.1",
+  "description": "A Progressive Web App Doppo project",
+  "main": "src/js/main.js",
+  "scripts": {
+    "start": "live-server src --port=8080",
+    "build": "rimraf dist && esbuild src/js/main.js --bundle --minify --outdir=dist/js && cpx \"src/**/*.{html,css,json,png,svg,ico}\" dist",
+    "test": "echo \"No tests configured\" && exit 0"
+  },
+  "keywords": [
+    "Doppo",
+    "Book",
+    "Online reading",
+    "PWA",
+    "progressive",
+    "web",
+    "app"
+  ],
+  "author": "Andrei Kirazian",
+  "license": "MIT",
+  "devDependencies": {
+    "cpx": "^1.2.1",
+    "esbuild": "^0.27.0",
+    "live-server": "^1.2.0",
+    "rimraf": "^5.0.0"
+  }
+}

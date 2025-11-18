@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Doppo — Preview</title>
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+
+<body>
+    <header class="topbar">
+        <h1>Doppo — Device Preview</h1>
+        <div class="controls">
+            <label for="deviceSelect">Choose device:</label>
+            <select id="deviceSelect">
+                <option value="device-default">Responsive</option>
+                <option value="device-iphone-se">iPhone SE (320x568)</option>
+                <option value="device-iphone-12">iPhone 12/13 (390x844)</option>
+                <option value="device-pixel-4">Pixel 4 (360x800)</option>
+                <option value="device-galaxy-s21">Galaxy S21 (360x800)</option>
+                <option value="device-ipad">iPad (768x1024)</option>
+            </select>
+
+            <button id="installBtn" class="btn" style="display:none;">Install App</button>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="emulator-wrapper">
+            <div class="emulator device-default" id="emulator">
+                <iframe id="previewFrame" src="/demo.html" title="App preview"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+
+</html>
