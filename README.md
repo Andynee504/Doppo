@@ -35,7 +35,7 @@ my-pwa
 1. Clone the repository:
    ```
    git clone <repository-url>
-   cd my-pwa
+   cd Doppo
    ```
 
 2. Install dependencies:
@@ -43,7 +43,7 @@ my-pwa
    npm install
    ```
 
-3. Run the application:
+3. Run the application (`package.json` command):
    ```
    npm start
    ```
