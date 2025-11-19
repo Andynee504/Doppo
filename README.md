@@ -5,7 +5,7 @@ This project is a Progressive Web App (PWA) designed to provide a seamless user 
 
 ## Project Structure
 ```
-my-pwa
+Doppo
 ├── src
 │   ├── index.html          # Main HTML document for the Landing Page
 │   ├── demo.html           # Main HTML document for the PWA
