@@ -1,25 +1,32 @@
 .header {
-    background-color: #4CAF50; /* Green background */
-    color: white; /* White text */
-    padding: 15px; /* Padding around the header */
-    text-align: center; /* Centered text */
-    font-size: 2em; /* Larger font size */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    color: var(--light);
+    background-color: var(--dark);
+    border-bottom: 1px solid var(--light);
 }
 
-.header h1 {
-    margin: 0; /* Remove default margin */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1em;
 }
 
-.header nav {
-    margin-top: 10px; /* Space above the navigation */
+/* todos os botões de ícone */
+.icon-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    cursor: pointer;
 }
 
-.header nav a {
-    color: white; /* White text for links */
-    text-decoration: none; /* Remove underline from links */
-    margin: 0 15px; /* Space between links */
-}
-
-.header nav a:hover {
-    text-decoration: underline; /* Underline on hover */
+/* icones */
+.icon-button img {
+    width: 100%;
+    /* filter: invert(1); /* se der tempo de implementar temas */
 }

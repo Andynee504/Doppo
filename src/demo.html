@@ -4,41 +4,18 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Doppo — Demo App</title>
-    <style>
-        body {
-            font-family: system-ui, -apple-system, Roboto, "Segoe UI", Arial;
-            margin: 0;
-            padding: 16px;
-            background: #fafafa;
-            color: #111;
-        }
-
-        header {
-            background: #3367D6;
-            color: #fff;
-            padding: 12px;
-            border-radius: 8px;
-            margin-bottom: 12px;
-        }
-
-        .card {
-            background: #fff;
-            padding: 12px;
-            border-radius: 8px;
-            box-shadow: 0 1px 4px rgba(0, 0, 0, .08);
-        }
-    </style>
+    <link rel="stylesheet" href="/css/mainMVP.css" />
+    <title>Doppo — MVP App</title>
 </head>
 
-<body>
-    <header>
-        <h2>Doppo Demo</h2>
-    </header>
-    <div class="card">
-        <p>This is a lightweight demo page to show responsiveness inside the emulator.</p>
-        <p>Resize or change devices from the landing page.</p>
+<body class="app-body">
+    <div class="app-shell">
+        <header id="app-header"></header>
+        <main id="app-main"></main>
+        <div id="app-footer"></div>
     </div>
+    <div id="overlay-root" class="overlay overlay--hidden"></div>
+    <script type="module" src="./js/modules/components.js"></script>
 </body>
 
 </html>

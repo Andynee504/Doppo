@@ -1,7 +1,7 @@
 :root {
-  --bg: #1e1e1e;
   --frame-bg: #111;
   --frame-border: #ddd;
+  --bg: #191715;
 }
 
 * {
@@ -58,6 +58,7 @@ body {
 }
 
 .emulator {
+  position: relative;
   background: var(--frame-bg);
   border-radius: 28px;
   padding: 12px;
@@ -68,6 +69,17 @@ body {
   border: 6px solid var(--frame-border);
   transition: width .25s, height .25s, border-radius .25s;
   overflow: hidden;
+}
+
+.emulator::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border-radius: calc(28px - 12px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.12);
+  pointer-events: none;
+  z-index: 1;
 }
 
 /* iframe fills the device viewport */
