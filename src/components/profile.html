@@ -1,0 +1,136 @@
+<section class="profile-view">
+    <header class="profile-header">
+        <div class="profile-header-main">
+            <img src="./img/users/aya.png" alt="Avatar do usuário" class="profile-avatar-lg" />
+            <div class="profile-header-text">
+                <h1 class="profile-name">Ayaa^^</h1>
+                <p class="profile-tagline">Exploradora de mundos e leituras</p>
+            </div>
+        </div>
+
+        <!-- tabs internas do perfil -->
+        <nav class="profile-tabs">
+            <button class="profile-tab profile-tab--active" data-tab="stats" type="button">
+                Atributos
+            </button>
+            <button class="profile-tab" data-tab="inventory" type="button">
+                Inventário
+            </button>
+            <button class="profile-tab" data-tab="reading" type="button">
+                Status de leitura
+            </button>
+        </nav>
+    </header>
+
+    <!-- ABA: ATRIBUTOS -->
+    <section class="profile-tab-panel profile-tab-panel--active" data-tab-panel="stats">
+        <div class="profile-attributes-grid">
+            <button class="profile-attr-card" type="button">
+                <span class="profile-attr-label">Força</span>
+                <span class="profile-attr-value">12</span>
+            </button>
+
+            <button class="profile-attr-card" type="button">
+                <span class="profile-attr-label">Inteligência</span>
+                <span class="profile-attr-value">18</span>
+            </button>
+
+            <button class="profile-attr-card" type="button">
+                <span class="profile-attr-label">Agilidade</span>
+                <span class="profile-attr-value">14</span>
+            </button>
+
+            <button class="profile-attr-card" type="button">
+                <span class="profile-attr-label">Destreza</span>
+                <span class="profile-attr-value">11</span>
+            </button>
+
+            <button class="profile-attr-card" type="button">
+                <span class="profile-attr-label">Sorte</span>
+                <span class="profile-attr-value">7</span>
+            </button>
+
+            <button class="profile-attr-card" type="button">
+                <span class="profile-attr-label">Resiliência</span>
+                <span class="profile-attr-value">9</span>
+            </button>
+
+            <button class="profile-attr-card" type="button" id="attr-mana">
+                <span class="profile-attr-label">Mana</span>
+                <span class="profile-attr-value">100 ⚡</span>
+            </button>
+        </div>
+
+        <p class="profile-attr-hint">
+            Toque em Mana para ver como ela é gerada a partir da sua leitura.
+        </p>
+    </section>
+
+    <!-- ABA: INVENTÁRIO -->
+    <section class="profile-tab-panel" data-tab-panel="inventory">
+        <div class="profile-inventory-filters">
+            <button class="profile-inventory-filter profile-inventory-filter--active">
+                Todos
+            </button>
+            <button class="profile-inventory-filter">
+                Equipados
+            </button>
+            <button class="profile-inventory-filter">
+                Cosméticos
+            </button>
+        </div>
+
+        <div class="profile-inventory-grid">
+            <article class="profile-item-card">
+                <div class="profile-item-icon">🗡</div>
+                <div class="profile-item-text">
+                    <h3 class="profile-item-name">Lâmina de Estudo</h3>
+                    <p class="profile-item-desc">Aumenta XP ao ler conteúdos densos.</p>
+                </div>
+            </article>
+
+            <article class="profile-item-card">
+                <div class="profile-item-icon">🎧</div>
+                <div class="profile-item-text">
+                    <h3 class="profile-item-name">Fones de Concentração</h3>
+                    <p class="profile-item-desc">Reduz distrações durante a leitura.</p>
+                </div>
+            </article>
+
+            <article class="profile-item-card">
+                <div class="profile-item-icon">🎭</div>
+                <div class="profile-item-text">
+                    <h3 class="profile-item-name">Máscara Cosmética</h3>
+                    <p class="profile-item-desc">Apenas visual, sem impacto de status.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ABA: STATUS DE LEITURA -->
+    <section class="profile-tab-panel" data-tab-panel="reading">
+        <div class="profile-reading-summary">
+            <div class="profile-reading-box">
+                <span class="profile-reading-label">Páginas lidas (semana)</span>
+                <span class="profile-reading-value">184</span>
+            </div>
+            <div class="profile-reading-box">
+                <span class="profile-reading-label">Tempo de leitura (semana)</span>
+                <span class="profile-reading-value">6h 20min</span>
+            </div>
+            <div class="profile-reading-box">
+                <span class="profile-reading-label">Mana gerada esta semana</span>
+                <span class="profile-reading-value">+45 ⚡</span>
+            </div>
+        </div>
+
+        <button class="pill-button pill-button--primary profile-reading-cta" type="button">
+            Ver detalhes de leitura
+        </button>
+
+        <p class="profile-reading-note">
+            No futuro, aqui entram gráficos por horário do dia, dia da semana,
+            mês e ano.
+        </p>
+    </section>
+</section>

@@ -1,0 +1,148 @@
+.trophy-view {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--light);
+}
+
+/* cabeçalho + filtros */
+
+.trophy-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.trophy-title {
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+.trophy-filters {
+    display: flex;
+    gap: 8px;
+}
+
+.trophy-filter {
+    flex: 1;
+    font-size: 0.75rem;
+    padding: 6px 8px;
+    border-radius: 999px;
+    border: 1px solid var(--gray);
+    background: transparent;
+    color: var(--light);
+    cursor: pointer;
+}
+
+.trophy-filter--active {
+    border-color: var(--primary);
+    background: var(--primary-dark);
+}
+
+/* grid de cards */
+
+.trophy-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.trophy-card {
+    background: var(--dark);
+    border-radius: 12px;
+    border: 1px solid var(--primary-dark);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: var(--light);
+    font-size: 0.75rem;
+}
+
+/* variações por tipo */
+
+.trophy-card--solo {
+    border-color: var(--primary-alt);
+}
+
+.trophy-card--group {
+    border-color: var(--primary);
+}
+
+/* estados */
+
+.trophy-card--active {
+    box-shadow: 0 0 0 1px var(--primary-dark);
+}
+
+.trophy-card--done {
+    opacity: 0.9;
+}
+
+.trophy-card--locked {
+    opacity: 0.6;
+}
+
+.trophy-card--empty {
+    border-style: dashed;
+    opacity: 0.4;
+}
+
+/* conteúdo interno */
+
+.trophy-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trophy-icon {
+    font-size: 1.2rem;
+}
+
+.trophy-reward {
+    font-size: 0.7rem;
+    color: var(--primary-alt);
+}
+
+.trophy-name {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.trophy-desc {
+    font-size: 0.7rem;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.trophy-progress-row {
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trophy-status-label {
+    font-size: 0.7rem;
+    color: var(--primary-alt);
+}
+
+/* barra de progresso */
+
+.trophy-progress-bar {
+    width: 100%;
+    height: 6px;
+    border-radius: 999px;
+    background: var(--gray);
+    overflow: hidden;
+}
+
+.trophy-progress-bar-fill,
+.trophy-progress-bar__fill {
+    height: 100%;
+    border-radius: inherit;
+    background: var(--primary);
+}

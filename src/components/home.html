@@ -1,0 +1,134 @@
+<section class="home-view">
+  <!-- PERFIL -->
+  <section class="profile-card">
+    <div class="left-1-2">
+      <img
+        src="./img/users/aya.png"
+        alt="Avatar do usuário"
+        class="profile-avatar"
+      />
+      <button class="inline-link profile-link" type="button">Perfil</button>
+    </div>
+    <div class="right-2-2">
+      <div class="profile-stats">
+        <span class="stat stat--hp">❤️ 100</span>
+        <span class="stat stat--energy" id="stat-mana">⚡ 100</span>
+        <span class="stat stat--streak">🔥 5</span>
+        <span class="stat stat--coins">$ 120</span>
+        <span class="stat stat--gems">💎 13</span>
+      </div>
+      <div class="user-nickname">
+        <h1>Ayaa^^</h1>
+      </div>
+      <div class="progress-bar progress-bar--xp">
+        <div class="progress-bar-fill" style="width: 60%;"></div>
+      </div>
+      <div class="experience">
+        <span class="profile-level">Lvl 8</span>
+        <span class="profile-xp">178xp</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVRO ATIVO -->
+  <section
+    class="card reading-section"
+    data-book-id="ninguem-sai-vivo"
+    data-total-pages="331"
+    data-current-page="185"
+  >
+    <article class="reading-card">
+      <div class="reading-cover">
+        <img
+          src="./img/app/books/ninguem-sai-vivo.jpg"
+          alt="Capa do livro Ninguém Sai Vivo"
+          id="reading-cover-img"
+        />
+      </div>
+
+      <div class="reading-content">
+        <h2 class="reading-title" id="reading-title">
+          Ninguém Sai Vivo
+        </h2>
+        <p class="reading-author" id="reading-author">Mark Miller</p>
+
+        <div class="reading-progress-header">
+          <span id="reading-percent">55,59%</span>
+          <span id="reading-pages">185 / 331</span>
+        </div>
+
+        <div class="progress-bar progress-bar--book">
+          <div
+            class="progress-bar__fill"
+            id="reading-progress-fill"
+            style="width: 55.59%;"
+          ></div>
+        </div>
+      </div>
+
+      <button class="reading-more" aria-label="Mais opções do livro">
+        ⓘ
+      </button>
+    </article>
+
+    <!-- BOTÃO PRINCIPAL: INICIAR / PARAR LEITURA -->
+    <button
+      class="pill-button pill-button--primary"
+      id="btn-reading-toggle"
+      type="button"
+    >
+      Ler agora
+    </button>
+
+    <!-- AÇÕES DO LIVRO ATIVO -->
+    <div class="reading-actions-row">
+      <button
+        class="pill-button pill-button--secondary"
+        id="btn-toggle-book-feed"
+        type="button"
+      >
+        Feed do livro
+      </button>
+
+      <button
+        class="pill-button pill-button--secondary"
+        id="btn-add-active-book"
+        type="button"
+      >
+        Adicionar livro ativo
+      </button>
+    </div>
+
+    <!-- FEED COMPACTO: 3 TÓPICOS RECENTES -->
+    <section
+      class="book-feed book-feed--collapsed"
+      id="home-book-feed"
+      aria-hidden="true"
+    >
+      <h3 class="book-feed-title">Discussões recentes</h3>
+
+      <ul class="book-feed-list">
+        <li class="book-feed-item">
+          <h4 class="book-feed-topic-title">Teorias sobre o final</h4>
+          <p class="book-feed-topic-meta">12 respostas · há 3 dias</p>
+        </li>
+        <li class="book-feed-item">
+          <h4 class="book-feed-topic-title">Capítulo 5 – sem spoilers</h4>
+          <p class="book-feed-topic-meta">4 respostas · há 1 dia</p>
+        </li>
+        <li class="book-feed-item">
+          <h4 class="book-feed-topic-title">Personagens favoritos</h4>
+          <p class="book-feed-topic-meta">7 respostas · há 5 horas</p>
+        </li>
+      </ul>
+
+      <button
+        class="book-feed-more inline-link"
+        id="btn-open-book-community"
+        type="button"
+      >
+        Ver comunidade completa
+      </button>
+    </section>
+  </section>
+</section>

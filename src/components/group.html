@@ -1,0 +1,100 @@
+<section class="group-view">
+  <!-- TÍTULO / HEADER INTERNO -->
+  <h1 class="group-title">Grupo</h1>
+
+  <!-- LISTA DE BOSSES / QUESTS -->
+  <section class="group-boss-list">
+    <!-- BOSS 1: Boss da semana -->
+    <article class="boss-card" data-boss-id="weekly-boss">
+      <button class="boss-card-header" type="button">
+        <div class="boss-card-title">Boss da semana</div>
+        <div class="boss-card-meta">Recomendado · 5 membros</div>
+      </button>
+
+      <div class="boss-card-body">
+        <!-- BOSS -->
+        <section class="group-boss">
+          <div class="boss-card-inner">
+            <div class="boss-portrait">Boss uuuuu</div>
+            <div class="boss-info">
+              <h2>Chefe</h2>
+              <div class="boss-level">Lvl 23</div>
+              <div class="progress-bar progress-bar--boss">
+                <div class="progress-bar__fill" style="width: 50%;"></div>
+              </div>
+              <span class="boss-hp">800 / 800</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- DANO + LISTA DO GRUPO -->
+        <section class="group-damage">
+          <p class="group-damage-label">Dano Carregado: 25</p>
+
+          <div class="group-members">
+            <!-- repete esses cards pros membros -->
+            <article class="member-card">
+              <img src="./img/users/aya.png" alt="" class="member-avatar" />
+              <div class="member-main">
+                <h3 class="member-name">Ayaa^^</h3>
+                <div class="member-level">Lvl 8</div>
+                <div class="progress-bar progress-bar--member">
+                  <div class="progress-bar__fill" style="width: 60%;"></div>
+                </div>
+                <div class="member-hp">100 / 100</div>
+              </div>
+            </article>
+
+            <!-- ...outros membros -->
+          </div>
+        </section>
+
+        <!-- BARRA DE HABILIDADES -->
+        <section class="group-abilities">
+          <button class="ability-chip"
+                  data-ability-name="Feitiço Relâmpago"
+                  data-ability-desc="Feitiço que ataca inimigos e os fere baseado em inteligência."
+                  data-ability-cost="25">
+            <span class="ability-icon">⚡</span>
+            <span class="ability-cost">25</span>
+          </button>
+
+          <button class="ability-chip"
+                  data-ability-name="Feitiço Cura"
+                  data-ability-desc="Cura outros jogadores baseado em sua inteligência."
+                  data-ability-cost="50">
+            <span class="ability-icon">❤</span>
+            <span class="ability-cost">50</span>
+          </button>
+
+          <!-- adiciona mais habilidades aqui -->
+        </section>
+      </div>
+    </article>
+
+    <!-- BOSS 2: Evento especial (exemplo) -->
+    <article class="boss-card" data-boss-id="event-boss">
+      <button class="boss-card-header" type="button">
+        <div class="boss-card-title">Evento especial</div>
+        <div class="boss-card-meta">Tempo limitado · 3 membros</div>
+      </button>
+
+      <div class="boss-card-body">
+        <!-- aqui você pode repetir a mesma estrutura acima para outro boss/quest -->
+        <section class="group-boss">
+          <div class="boss-card-inner">
+            <div class="boss-portrait">Boss evento</div>
+            <div class="boss-info">
+              <h2>Chefe Evento</h2>
+              <div class="boss-level">Lvl 30</div>
+              <div class="progress-bar progress-bar--boss">
+                <div class="progress-bar__fill" style="width: 30%;"></div>
+              </div>
+              <span class="boss-hp">450 / 1500</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </article>
+  </section>
+</section>

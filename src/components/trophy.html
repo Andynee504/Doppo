@@ -1,0 +1,109 @@
+<section class="trophy-view">
+  <header class="trophy-header">
+    <h1 class="trophy-title">Desafios & Conquistas</h1>
+
+    <div class="trophy-filters">
+      <button class="trophy-filter trophy-filter--active" data-filter="all">
+        Todos
+      </button>
+      <button class="trophy-filter" data-filter="solo">
+        Meus
+      </button>
+      <button class="trophy-filter" data-filter="group">
+        Grupo
+      </button>
+    </div>
+  </header>
+
+  <section class="trophy-grid">
+    <!-- conquista individual ATIVA -->
+    <article
+      class="trophy-card trophy-card--solo trophy-card--active"
+      data-type="solo"
+    >
+      <div class="trophy-card-top">
+        <span class="trophy-icon">👤</span>
+        <span class="trophy-reward">+50 💎</span>
+      </div>
+
+      <h2 class="trophy-name">Leia 10 capítulos</h2>
+      <p class="trophy-desc">Complete 10 capítulos em qualquer livro.</p>
+
+      <div class="trophy-progress-row">
+        <span>8 / 10</span>
+      </div>
+
+      <div class="trophy-progress-bar">
+        <div class="trophy-progress-bar__fill" style="width: 80%;"></div>
+      </div>
+    </article>
+
+    <!-- conquista individual CONCLUÍDA -->
+    <article
+      class="trophy-card trophy-card--solo trophy-card--done"
+      data-type="solo"
+    >
+      <div class="trophy-card-top">
+        <span class="trophy-icon">👤</span>
+        <span class="trophy-reward">+100 💎</span>
+      </div>
+
+      <h2 class="trophy-name">Primeiro livro concluído</h2>
+      <p class="trophy-desc">Finalize qualquer livro e registre na Doppo.</p>
+
+      <div class="trophy-progress-row">
+        <span>1 / 1</span>
+        <span class="trophy-status-label">Concluído</span>
+      </div>
+
+      <div class="trophy-progress-bar">
+        <div class="trophy-progress-bar__fill" style="width: 100%;"></div>
+      </div>
+    </article>
+
+    <!-- desafio de GRUPO ATIVO -->
+    <article
+      class="trophy-card trophy-card--group trophy-card--active"
+      data-type="group"
+      data-boss-id="weekly-boss"
+    >
+      <div class="trophy-card-top">
+        <span class="trophy-icon">👥</span>
+        <span class="trophy-reward">+200 🔥</span>
+      </div>
+
+      <h2 class="trophy-name">Derrotar o Boss da Semana</h2>
+      <p class="trophy-desc">Seu grupo precisa zerar a vida do boss atual.</p>
+
+      <div class="trophy-progress-row">
+        <span>72%</span>
+        <span class="trophy-status-label">Em andamento</span>
+      </div>
+
+      <div class="trophy-progress-bar">
+        <div class="trophy-progress-bar__fill" style="width: 72%;"></div>
+      </div>
+    </article>
+
+    <!-- desafio de grupo BLOQUEADO -->
+    <article
+      class="trophy-card trophy-card--group trophy-card--locked"
+      data-type="group"
+      data-boss-id="event-boss"
+    >
+      <div class="trophy-card-top">
+        <span class="trophy-icon">👥</span>
+        <span class="trophy-reward">+1 🎴</span>
+      </div>
+
+      <h2 class="trophy-name">Evento especial</h2>
+      <p class="trophy-desc">Desbloqueado ao assinar Doppo+.</p>
+
+      <div class="trophy-progress-row">
+        <span>Bloqueado</span>
+      </div>
+
+      <div class="trophy-progress-bar trophy-progress-bar--empty"></div>
+    </article>
+  </section>
+</section>

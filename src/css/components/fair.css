@@ -1,0 +1,202 @@
+.fair-view {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--light);
+}
+
+.fair-title {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.fair-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.fair-section-title {
+    font-size: 0.85rem;
+    margin: 0;
+    color: var(--light);
+}
+
+.fair-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.fair-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: var(--light);
+}
+
+.fair-item-card {
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    background: var(--gray);
+    border: 2px solid var(--primary-dark);
+}
+
+.fair-item-card--highlight {
+    border-color: var(--primary);
+    background: var(--primary-dark);
+}
+
+.fair-item-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.fair-item-name {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.fair-item-price {
+    font-size: 0.75rem;
+    color: var(--primary-alt);
+}
+
+/* cabeçalho da loja */
+.fair-header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.fair-title {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--light);
+}
+
+.fair-subtitle {
+    margin: 0;
+    font-size: 0.75rem;
+    opacity: 0.85;
+    color: var(--light);
+}
+
+/* NAV INTERNA (ABAS) */
+
+.fair-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.fair-tab {
+    flex: 1;
+    border-radius: 999px;
+    border: 1px solid var(--gray);
+    background: transparent;
+    color: var(--light);
+    font-size: 0.75rem;
+    padding: 6px 8px;
+    cursor: pointer;
+}
+
+.fair-tab--active {
+    border-color: var(--primary);
+    background: var(--primary-dark);
+}
+
+/* PAINÉIS */
+
+.fair-tab-panel {
+    display: none;
+    margin-top: 4px;
+}
+
+.fair-tab-panel--active {
+    display: block;
+}
+
+/* cabeçalhos internos das seções */
+
+.fair-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 6px;
+}
+
+.fair-section-title {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--light);
+}
+
+.fair-section-meta {
+    font-size: 0.7rem;
+    opacity: 0.8;
+    color: var(--light);
+}
+
+/* premium / assinatura */
+
+.fair-grid--premium {
+    grid-template-columns: 1fr;
+}
+
+.fair-item--premium {
+    border: 1px solid var(--primary);
+}
+
+/* cartão de assinatura */
+
+.fair-subscription-card {
+    margin-top: 8px;
+    background: var(--gray);
+    border-radius: 16px;
+    padding: 12px;
+    border: 1px solid var(--primary);
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.fair-subscription-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fair-subscription-title {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.fair-subscription-tag {
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: var(--primary-dark);
+}
+
+.fair-subscription-text {
+    margin: 0;
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+
+.fair-subscription-list {
+    margin: 0;
+    padding-left: 16px;
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+
+.fair-subscription-btn {
+    margin-top: 4px;
+    width: 100%;
+}

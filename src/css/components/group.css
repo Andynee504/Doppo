@@ -1,0 +1,211 @@
+section {
+    color: var(--light);
+}
+
+.group-view {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* título interno */
+.group-title {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+/* LISTA DE BOSSES / QUESTS */
+
+.group-boss-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* card externo de cada boss/quest */
+
+.boss-card {
+    background: var(--gray);
+    border-radius: 12px;
+    border: 1px solid var(--primary-dark);
+    overflow: hidden;
+}
+
+/* header clicável do boss (título + meta) */
+
+.boss-card-header {
+    width: 100%;
+    padding: 8px 10px;
+    background: transparent;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.boss-card-title {
+    font-size: 0.9rem;
+}
+
+.boss-card-meta {
+    font-size: 0.75rem;
+    opacity: 0.85;
+}
+
+/* parte colapsável */
+
+.boss-card-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease-out, padding 0.25s ease-out;
+    padding: 0 10px;
+}
+
+.boss-card-body--open {
+    max-height: 800px; /* grande o suficiente pro conteúdo interno */
+    padding: 8px 10px 10px;
+}
+
+.boss-card--open {
+    border-color: var(--primary);
+}
+
+/* BOSS (dentro da body) */
+
+.group-boss {
+    padding: 8px 0;
+}
+
+.boss-card-inner {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.boss-portrait {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: var(--primary-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+.boss-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.boss-info h2 {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.boss-level {
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+
+.boss-hp {
+    font-size: 0.75rem;
+}
+
+/* você pode reusar suas classes de progress-bar globais:
+   .progress-bar, .progress-bar__fill, etc. */
+
+/* DANO + LISTA DO GRUPO */
+
+.group-damage {
+    margin-top: 4px;
+    margin-bottom: 6px;
+}
+
+.group-damage-label {
+    font-size: 0.8rem;
+    margin: 0 0 6px;
+}
+
+.group-members {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.member-card {
+    display: flex;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: 12px;
+    background: var(--gray-rgba);
+}
+
+.member-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.member-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.member-name {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.member-level {
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+
+.member-hp {
+    font-size: 0.7rem;
+}
+
+/* BARRA DE HABILIDADES */
+
+.group-abilities {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid var(--primary-alt);
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.ability-chip {
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    padding: 8px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--primary-alt);
+    background: var(--gray);
+    color: var(--light);
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.ability-icon {
+    font-size: 1.1rem;
+}
+
+.ability-cost {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}

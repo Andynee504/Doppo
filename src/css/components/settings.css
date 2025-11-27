@@ -1,0 +1,153 @@
+/* painel lateral de configurações */
+.overlay-panel--settings {
+    width: 80%;
+    max-width: 320px;
+    height: 100%;
+    background: var(--dark);
+    color: var(--light);
+    border-radius: 24px 0 0 24px;
+    margin-left: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    animation: settings-slide-in 0.25s ease-out;
+}
+
+@keyframes settings-slide-in {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.settings-header-title {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.settings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.settings-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 4px;
+    cursor: pointer;
+}
+
+.settings-item-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    background: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+.settings-item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.settings-item-title {
+    font-size: 0.85rem;
+    color: var(--light);
+}
+
+.settings-item-desc {
+    font-size: 0.7rem;
+    color: var(--light);
+    opacity: 0.8;
+}
+
+/* PAINEL DE CONFIGURAÇÕES – independente de overlay-panel */
+.settings-panel {
+    width: 80%;
+    max-width: 320px;
+    height: 100%;
+    background: var(--dark);
+    color: var(--light);
+    border-radius: 24px 0 0 24px;   /* abre para a ESQUERDA */
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    /* chave para grudar na DIREITA */
+    margin-left: auto;
+    margin-right: 0;
+    align-self: stretch;
+
+    animation: settings-slide-in 0.25s ease-out;
+}
+
+/* animação vindo da direita pro centro */
+@keyframes settings-slide-in {
+    from {
+        transform: translateX(50vw);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.settings-header-title {
+    font-size: 1rem;
+    margin: 0 0 12px;
+    color: var(--light);
+}
+
+.settings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.settings-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 4px;
+    cursor: pointer;
+}
+
+.settings-item-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    background: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: var(--light);
+}
+
+.settings-item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.settings-item-title {
+    font-size: 0.85rem;
+    color: var(--light);
+}
+
+.settings-item-desc {
+    font-size: 0.7rem;
+    color: var(--light);
+    opacity: 0.8;
+}

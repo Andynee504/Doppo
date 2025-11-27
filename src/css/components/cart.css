@@ -1,0 +1,162 @@
+.shop-view {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--light);
+}
+
+.shop-header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.shop-title {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.shop-subtitle {
+    margin: 0;
+    font-size: 0.75rem;
+    opacity: 0.85;
+}
+
+/* seções */
+
+.shop-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.shop-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.shop-section-title {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.shop-section-currency {
+    font-size: 0.7rem;
+    opacity: 0.8;
+}
+
+/* grid de itens */
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.shop-grid--premium {
+    grid-template-columns: 1fr;
+}
+
+.shop-item {
+    background: var(--gray);
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 0.75rem;
+    border: 1px solid var(--primary-dark);
+}
+
+.shop-item--premium {
+    border-color: var(--primary);
+}
+
+.shop-item-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    background: var(--primary-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.shop-item-name {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.shop-item-desc {
+    margin: 0;
+    font-size: 0.7rem;
+    opacity: 0.9;
+}
+
+.shop-item-footer {
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-item-price {
+    font-size: 0.75rem;
+    color: var(--primary-alt);
+}
+
+/* assinatura */
+
+.shop-subscription {
+    margin-top: 8px;
+}
+
+.shop-subscription-card {
+    background: var(--gray);
+    border-radius: 16px;
+    padding: 12px;
+    border: 1px solid var(--primary);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.shop-subscription-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-subscription-title {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.shop-subscription-tag {
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: var(--primary-dark);
+    color: var(--light);
+}
+
+.shop-subscription-text {
+    margin: 0;
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+
+.shop-subscription-list {
+    margin: 0;
+    padding-left: 16px;
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+
+.shop-subscription-btn {
+    margin-top: 4px;
+    width: 100%;
+}

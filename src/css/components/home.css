@@ -1,0 +1,249 @@
+.home-view {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: var(--light);
+}
+
+/* PERFIL -------------------------------------------------- */
+
+.profile-card {
+  display: flex;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  border: 1px solid var(--primary);
+  background: var(--gray-rgba);
+}
+
+.left-1-2,
+.right-2-2 {
+  flex: 1 1 0;
+}
+
+/* coluna ESQUERDA */
+.left-1-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* avatar */
+.profile-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* link Perfil */
+.inline-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.8rem;
+  color: #b48bf2;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* coluna DIREITA */
+.right-2-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profile-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 0.78rem;
+}
+
+.user-nickname h1 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* barra de xp */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: #b48bf2;
+}
+
+.progress-bar--xp {
+  margin-top: 4px;
+}
+
+.experience {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+/* LIVRO ATIVO -------------------------------------------- */
+.card {
+  background: var(--primary-dark);
+  border-radius: 1em;
+  border: 2px solid var(--primary);
+  padding: 1em;
+}
+
+.reading-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reading-card {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.reading-cover img {
+  width: 56px;
+  height: 84px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.reading-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.reading-title {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.reading-author {
+  font-size: 0.8rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.reading-progress-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  opacity: 0.9;
+}
+
+.progress-bar--book {
+  margin-top: 4px;
+}
+
+/* compat com .progress-bar__fill usada no livro */
+.progress-bar__fill {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--primary);
+}
+
+/* botãozinho lateral do livro */
+.reading-more {
+  background: none;
+  border: none;
+  color: var(--light);
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* botões do livro */
+
+.pill-button {
+  width: 100%;
+  border-radius: 999px;
+  padding: 8px;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.pill-button--primary {
+  background: var(--primary);
+  color: var(--dark);
+}
+
+.pill-button--secondary {
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+#btn-reading-toggle {
+  margin-top: 4px;
+}
+
+/* linha com "Feed do livro" + "Adicionar livro ativo" */
+.reading-actions-row {
+  display: flex;
+  gap: 8px;
+}
+
+/* FEED COMPACTO ------------------------------------------ */
+
+.book-feed {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--primary-alt);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.book-feed--collapsed {
+  display: none;
+}
+
+.book-feed-title {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.book-feed-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.book-feed-item {
+  padding: 6px 8px;
+  border-radius: 10px;
+  background: var(--gray);
+}
+
+.book-feed-topic-title {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.book-feed-topic-meta {
+  margin: 0;
+  font-size: 0.7rem;
+  opacity: 0.85;
+}
+
+.book-feed-more {
+  align-self: flex-end;
+  font-size: 0.75rem;
+}

@@ -1,0 +1,116 @@
+.book-view {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--light);
+}
+
+.book-header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.book-header-main {
+    display: flex;
+    gap: 12px;
+}
+
+.book-cover {
+    width: 92px;
+    height: 138px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.book-header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.book-title {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.book-author {
+    font-size: 0.8rem;
+    margin: 0;
+    opacity: 0.8;
+}
+
+/* botão que envolve o progresso, pra virar gatilho de popup */
+.book-progress-button {
+    margin-top: 4px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.book-progress-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+.book-progress-label {
+    opacity: 0.9;
+}
+
+.book-progress-numbers {
+    opacity: 0.8;
+}
+
+/* comunidade */
+
+.book-community {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.book-community-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-community h2 {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.book-topics {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.book-topic {
+    padding: 8px 10px;
+    border-radius: 10px;
+    background: var(--gray);
+}
+
+.book-topic-title {
+    margin: 0 0 4px;
+    font-size: 0.85rem;
+}
+
+.book-topic-meta {
+    margin: 0;
+    font-size: 0.7rem;
+    opacity: 0.8;
+}
