@@ -4,72 +4,33 @@
   <!-- BUSCA -->
   <div class="library-search-row">
     <div class="library-search">
-      <input
-        type="text"
-        class="library-search-input"
-        placeholder="Pesquisar livro"
-      />
+      <input type="text" class="library-search-input" placeholder="Pesquisar livro" />
 
-      <button
-        class="library-search-btn library-search-filter"
-        aria-label="Filtros"
-        type="button"
-      >
-        <img
-          src="./img/app/icons/tune_24dp_F7F2E5_FILL1_wght400_GRAD0_opsz24.svg"
-          alt=""
-        />
+      <button class="library-search-btn library-search-filter" aria-label="Filtros" type="button">
+        <img src="./img/app/icons/tune_24dp_F7F2E5_FILL1_wght400_GRAD0_opsz24.svg" alt="" />
       </button>
 
-      <button
-        class="library-search-btn library-search-submit"
-        aria-label="Buscar"
-        type="button"
-      >
-        <img
-          src="./img/app/icons/search_24dp_F7F2E5_FILL1_wght400_GRAD0_opsz24.svg"
-          alt=""
-        />
+      <button class="library-search-btn library-search-submit" aria-label="Buscar" type="button">
+        <img src="./img/app/icons/search_24dp_F7F2E5_FILL1_wght400_GRAD0_opsz24.svg" alt="" />
       </button>
     </div>
   </div>
 
   <!-- ESTANTES / MARCADORES -->
   <div class="library-tags">
-    <button
-      class="library-tag library-tag--all library-tag--active"
-      data-filter="all"
-      aria-label="Todos os livros"
-      type="button"
-    ></button>
-    <button
-      class="library-tag library-tag--primary"
-      data-filter="primary"
-      aria-label="Estante roxa"
-      type="button"
-    ></button>
-    <button
-      class="library-tag library-tag--dark"
-      data-filter="dark"
-      aria-label="Estante escura"
-      type="button"
-    ></button>
-    <button
-      class="library-tag library-tag--alt"
-      data-filter="alt"
-      aria-label="Estante amarela"
-      type="button"
-    ></button>
+    <button class="library-tag library-tag--all library-tag--active" data-filter="all" aria-label="Todos os livros"
+      type="button"></button>
+    <button class="library-tag library-tag--primary" data-filter="primary" aria-label="Estante roxa"
+      type="button"></button>
+    <button class="library-tag library-tag--dark" data-filter="dark" aria-label="Estante escura" type="button"></button>
+    <button class="library-tag library-tag--alt" data-filter="alt" aria-label="Estante amarela" type="button"></button>
+    <button class="library-tag library-tag--add" data-filter="add" aria-label="Estante nova" type="button">+</button>
   </div>
 
   <!-- GRID DE LIVROS -->
   <section class="library-grid">
     <!-- exemplos de livros, com estante marcada em data-shelf -->
-    <article
-      class="library-item"
-      data-shelf="primary"
-      data-book-id="katabasis"
-    >
+    <article class="library-item" data-shelf="primary" data-book-id="katabasis">
       <div class="library-cover"></div>
       <div class="library-meta">
         <h2 class="library-book-title">Katabasis</h2>
@@ -85,11 +46,7 @@
       </div>
     </article>
 
-    <article
-      class="library-item"
-      data-shelf="dark"
-      data-book-id="ninguem-sai-vivo"
-    >
+    <article class="library-item" data-shelf="dark" data-book-id="ninguem-sai-vivo">
       <div class="library-cover"></div>
       <div class="library-meta">
         <h2 class="library-book-title">Ninguém Sai Vivo</h2>
@@ -97,11 +54,7 @@
       </div>
     </article>
 
-    <article
-      class="library-item"
-      data-shelf="alt"
-      data-book-id="livro-exemplo"
-    >
+    <article class="library-item" data-shelf="alt" data-book-id="livro-exemplo">
       <div class="library-cover"></div>
       <div class="library-meta">
         <h2 class="library-book-title">Livro Exemplo</h2>
@@ -110,11 +63,7 @@
     </article>
 
     <!-- CARD DE ADICIONAR LIVRO -->
-    <button
-      class="library-item library-item--add"
-      type="button"
-      id="btn-library-add-book"
-    >
+    <button class="library-item library-item--add" type="button" id="btn-library-add-book">
       <div class="library-add-box">
         <span class="library-add-plus">+</span>
       </div>

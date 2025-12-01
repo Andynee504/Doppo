@@ -16,8 +16,8 @@ if (workbox) {
     { url: '/manifest.json', revision: 'v1' },
     { url: '/css/main.css', revision: 'v1' },
     { url: '/js/main.js', revision: 'v1' },
-    { url: '/icons/icon-192x192.png', revision: 'v1' },
-    { url: '/icons/icon-512x512.png', revision: 'v1' }
+    { url: '/img/icons/png/purple_black_192.png', revision: 'v1' },
+    { url: '/img/icons/png/purple_black_512.png', revision: 'v1' }
     // other assets here later
   ]);
 

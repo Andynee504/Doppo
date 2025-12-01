@@ -35,7 +35,6 @@ html, body {
     background-color: var(--dark);
 }
 
-/*PULO DO GATO */
 .app-shell {
     height: 100vh;
     display: flex;
@@ -64,6 +63,7 @@ html, body {
 }
 
 .overlay-panel {
+    /* CORRIGIR */
     width: 100%;
     max-width: 360px;
     height: 50vh;        /* metade da tela */

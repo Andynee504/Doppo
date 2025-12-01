@@ -83,6 +83,23 @@
     outline: 1px solid transparent;
 }
 
+.library-tag--add {
+    color: var(--light);
+    font-size: 0.8rem;;
+    font-weight: bold;
+    background-color: #11111100;
+    width: 22px;
+    height: 32;
+    border-radius: 4px 4px 10px 10px;
+    border: 2px dashed var(--light);
+    cursor: pointer;
+    outline: 1px solid transparent;
+}
+/*
+.library-tag--add:hover {
+    background-color: var(--light);
+}
+*/
 /* estado ativo da tag (estante selecionada) */
 .library-tag--active {
     outline: 2px solid var(--light);

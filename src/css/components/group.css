@@ -48,10 +48,12 @@ section {
 }
 
 .boss-card-title {
+    color: var(--light);
     font-size: 0.9rem;
 }
 
 .boss-card-meta {
+    color: var(--light);
     font-size: 0.75rem;
     opacity: 0.85;
 }

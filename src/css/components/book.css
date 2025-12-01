@@ -57,6 +57,7 @@
 }
 
 .book-progress-header {
+    color: var(--light);
     display: flex;
     justify-content: space-between;
     font-size: 0.8rem;
