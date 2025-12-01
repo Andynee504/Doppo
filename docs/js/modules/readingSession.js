@@ -12,7 +12,7 @@ const BOOK_OPTIONS = [
     id: "ninguem-sai-vivo",
     title: "Ninguém Sai Vivo",
     author: "Mark Miller",
-    coverSrc: "../img/bookCovers/ninguemSaiVivo.jpg",
+    coverSrc: "./img/bookCovers/ninguemSaiVivo.jpg",
     totalPages: 331,
     currentPage: 185,
   },
